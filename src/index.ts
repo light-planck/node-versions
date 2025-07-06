@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { createCLI } from './cli.js';
+import { createCLI } from "./cli.js";
 
 async function main() {
   const program = await createCLI();
@@ -8,6 +8,6 @@ async function main() {
 }
 
 main().catch((error) => {
-  console.error('Fatal error:', error);
+  console.error("Fatal error:", error);
   process.exit(1);
 });

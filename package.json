@@ -9,10 +9,21 @@
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
-    "prepublishOnly": "pnpm run build"
+    "prepublishOnly": "pnpm run build",
+    "format": "biome format --write .",
+    "lint": "biome lint .",
+    "check": "biome check .",
+    "fix": "biome check --write ."
   },
   "packageManager": "pnpm@9.0.0",
-  "keywords": ["node", "nodejs", "version", "lts", "latest", "cli"],
+  "keywords": [
+    "node",
+    "nodejs",
+    "version",
+    "lts",
+    "latest",
+    "cli"
+  ],
   "author": "",
   "license": "MIT",
   "engines": {
@@ -22,6 +33,7 @@
     "commander": "^12.0.0"
   },
   "devDependencies": {
+    "@biomejs/biome": "^2.0.6",
     "@types/node": "^22.0.0",
     "typescript": "^5.0.0"
   }

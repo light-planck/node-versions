@@ -19,33 +19,33 @@ export interface VersionInfo {
 
 export async function getNodeVersions(): Promise<VersionInfo> {
   try {
-    const response = await fetch('https://nodejs.org/dist/index.json');
-    
+    const response = await fetch("https://nodejs.org/dist/index.json");
+
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
 
-    const versions = await response.json() as NodeVersion[];
-    
+    const versions = (await response.json()) as NodeVersion[];
+
     if (!versions || versions.length === 0) {
-      throw new Error('No version data received');
+      throw new Error("No version data received");
     }
 
     const latest = versions[0].version;
-    const ltsVersion = versions.find(v => v.lts !== false);
-    
+    const ltsVersion = versions.find((v) => v.lts !== false);
+
     if (!ltsVersion) {
-      throw new Error('No LTS version found');
+      throw new Error("No LTS version found");
     }
 
     return {
       lts: ltsVersion.version,
-      latest: latest
+      latest: latest,
     };
   } catch (error) {
     if (error instanceof Error) {
       throw new Error(`Failed to fetch Node.js versions: ${error.message}`);
     }
-    throw new Error('Failed to fetch Node.js versions: Unknown error');
+    throw new Error("Failed to fetch Node.js versions: Unknown error");
   }
 }
