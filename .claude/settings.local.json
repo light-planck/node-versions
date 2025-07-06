@@ -10,7 +10,11 @@
       "Bash(chmod:*)",
       "Bash(node:*)",
       "Bash(pnpm add:*)",
-      "Bash(pnpm biome:*)"
+      "Bash(pnpm biome:*)",
+      "Bash(git push:*)",
+      "Bash(npm publish:*)",
+      "Bash(npx @light-planck/node-versions:*)",
+      "Bash(rm:*)"
     ],
     "deny": []
   }

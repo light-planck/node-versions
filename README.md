@@ -1,4 +1,4 @@
-# node-versions
+# @light-planck/node-versions
 
 A CLI tool to check Node.js LTS and Latest versions
 
@@ -6,24 +6,24 @@ A CLI tool to check Node.js LTS and Latest versions
 
 ```bash
 # Default: Show both LTS and Latest versions
-npx node-versions
+npx @light-planck/node-versions
 # LTS: v22.17.0
 # Latest: v24.3.0
 
 # Show only LTS version
-npx node-versions --lts
+npx @light-planck/node-versions --lts
 # v22.17.0
 
 # Show only Latest version
-npx node-versions --latest
+npx @light-planck/node-versions --latest
 # v24.3.0
 
 # JSON output
-npx node-versions --json
+npx @light-planck/node-versions --json
 # {"lts":"v22.17.0","latest":"v24.3.0"}
 
 # Show help
-npx node-versions --help
+npx @light-planck/node-versions --help
 ```
 
 ## Options
@@ -41,6 +41,16 @@ npx node-versions --help
 - Fetches version information from [Node.js official API](https://nodejs.org/dist/index.json)
 - Dependencies: `commander` (CLI framework)
 
+## Installation
+
+```bash
+# Install globally
+npm install -g @light-planck/node-versions
+
+# Or use directly with npx
+npx @light-planck/node-versions
+```
+
 ## Development
 
 ```bash
@@ -54,7 +64,7 @@ pnpm run build
 pnpm run dev
 
 # Test locally
-node bin/node-versions.js
+node dist/index.js
 ```
 
 ## License
