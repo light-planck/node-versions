@@ -9,8 +9,9 @@
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "pnpm run build"
   },
+  "packageManager": "pnpm@9.0.0",
   "keywords": ["node", "nodejs", "version", "lts", "latest", "cli"],
   "author": "",
   "license": "MIT",

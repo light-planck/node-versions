@@ -25,7 +25,7 @@ export async function getNodeVersions(): Promise<VersionInfo> {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
 
-    const versions: NodeVersion[] = await response.json();
+    const versions = await response.json() as NodeVersion[];
     
     if (!versions || versions.length === 0) {
       throw new Error('No version data received');
