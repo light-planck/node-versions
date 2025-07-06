@@ -1,10 +1,10 @@
 {
   "name": "@light-planck/node-versions",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Check Node.js LTS and Latest versions",
   "main": "dist/index.js",
   "bin": {
-    "node-versions": "./dist/index.js"
+    "node-versions": "dist/index.js"
   },
   "scripts": {
     "build": "tsc",

@@ -1,0 +1,28 @@
+# Development files
+src/
+.claude/
+.mise.toml
+tsconfig.json
+biome.json
+requirements.md
+
+# Git files
+.git/
+.gitignore
+
+# Build artifacts
+*.tgz
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
