@@ -6,30 +6,30 @@ A CLI tool to check Node.js LTS and Latest versions
 
 ```bash
 # Default: Show both LTS and Latest versions
-npx @light-planck/node-versions
+npx @light-planck/node-versions@latest
 # LTS: v22.17.0
 # Latest: v24.3.0
 
 # Show only LTS version
-npx @light-planck/node-versions --lts
+npx @light-planck/node-versions@latest --lts
 # v22.17.0
 
 # Show only Latest version
-npx @light-planck/node-versions --latest
+npx @light-planck/node-versions@latest --latest
 # v24.3.0
 
 # JSON output
-npx @light-planck/node-versions --json
+npx @light-planck/node-versions@latest --json
 # {"lts":"v22.17.0","latest":"v24.3.0"}
 
 # Show help
-npx @light-planck/node-versions --help
+npx @light-planck/node-versions@latest --help
 ```
 
 ## Options
 
 - `--lts` - Show only LTS version
-- `--latest` - Show only Latest version  
+- `--latest` - Show only Latest version
 - `--json` - Output in JSON format
 - `--help` - Show help
 - `--version` - Show version
@@ -48,7 +48,7 @@ npx @light-planck/node-versions --help
 npm install -g @light-planck/node-versions
 
 # Or use directly with npx
-npx @light-planck/node-versions
+npx @light-planck/node-versions@latest
 ```
 
 ## Development
