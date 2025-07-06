@@ -1,5 +1,5 @@
 {
-  "name": "node-versions",
+  "name": "@light-planck/node-versions",
   "version": "1.0.0",
   "description": "Check Node.js LTS and Latest versions",
   "main": "dist/index.js",
