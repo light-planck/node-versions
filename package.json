@@ -1,0 +1,27 @@
+{
+  "name": "node-versions",
+  "version": "1.0.0",
+  "description": "Check Node.js LTS and Latest versions",
+  "main": "dist/index.js",
+  "bin": {
+    "node-versions": "./bin/node-versions.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["node", "nodejs", "version", "lts", "latest", "cli"],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "dependencies": {
+    "commander": "^12.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.0.0"
+  }
+}
